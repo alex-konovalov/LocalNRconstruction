@@ -1,4 +1,3 @@
-gap> Read("Comb125.g");
 gap> Comb125(16);
 
 i=10
