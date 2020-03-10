@@ -1,4 +1,6 @@
-LoadPackage("localnr");
+# LoadPackage("localnr");
+
+# Functions to generate names of output files
 
 fn:=function(x)
 local log;
@@ -20,12 +22,17 @@ local func;
 func := Concatenation("Endom125_5mult_",String(x),"_",String(y),"_v");
 return func;end;
 
+# MT (list of multiplication tables) - main outcome of our calculation
 MT:=[];
+
+# k1=Size(Mult) is the size of the set of candidates for 
+# multiplicative group (up to IdGroup) of a local nearring
 
 for i1 in [1.. k1] do
   LogTo(fn(i1));
   Print("\n","The CASE i1=", i1," ","started","\n");
   MT2:=[];
+  # U1 is a list of subgroups of Aut(G) with the current IdGroup
   U1:=Filtered(U,x->IdGroup(x)=Mult[i1]);;
   u:=Size(U1);
   Print("\n","Size(U1)=",u ," ", "IdGroup=", Mult[i1], "\n ");

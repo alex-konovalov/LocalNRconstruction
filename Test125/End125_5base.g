@@ -24,6 +24,9 @@ for x in Su do
 od;
 
 U0:=Filtered(Mul,x->Maximum(OrbitLengths(x,G))=100);;
+
+# U is a list of representatives of conjugacy classes 
+# of subgroups of Aut(G)
 U:=[];
 
 for x in U0 do
@@ -33,6 +36,7 @@ for x in U0 do
   Add(U,PreImage(is,c[1]));
 od;
 
+# Mult is a set of all IdGroups appearing in U
 Mult:=AsSet(List(U,IdGroup));;
 k1:=Size(Mult);
 Print("\n",k1," ");
@@ -77,6 +81,7 @@ od;
 En:=[];
 N:=Filtered(N,x->x^6=x^3);;
 N:=AsSet(N);;
+# Order of the set of nilpotent endomorphisms
 Print("\n","Size(N)=",Size(N),"\n");
 Em:=MagmaWithOne(Union(UU,N));;
 map:=MappingByFunction(Em,G,g);
