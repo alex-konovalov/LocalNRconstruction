@@ -40,7 +40,7 @@ for i1 in [1.. k1] do
     Print("The CASE i2=", i2," started\n");
     MT1:=[];
     Read("End125_a3mod.g");
-    Read("WriteEndomWS.txt");
+    Read("WriteEndomWS.g");
     Print("The CASE i2=", i2," is completed\n");
     Print("\n","Size(MT1)=",Size(MT1)," Size(MT2)=",Size(MT2),"\n");
     #SaveWorkspace(fn2(i1,i2));
@@ -60,6 +60,6 @@ for i1 in [1.. k1] do
   i3:=IdGroup(A)[1];
   i4:=IdGroup(A)[2];
   LogTo();
-  Read("FormEndom.txt");
+  Read("FormEndom.g");
 od;
 
