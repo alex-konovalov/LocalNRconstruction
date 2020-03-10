@@ -41,6 +41,8 @@ for i in [1..li[j]] do
     d:=Combinations(VV[k],Com[j][i][k]);
     Add(dd,d);
   od;
+
+  Print("\n","List(dd,Size)=",List(dd,Size),"\n");
   
   for x1 in dd[1] do
   for x2 in dd[2] do
