@@ -1,4 +1,5 @@
 Read("init.g");
+Info(InfoLocalNRconst, 1, "**************** End125_5base.g entered");
 LogTo("End125_5start.txt");
 
 G:=SmallGroup(125,5);
@@ -88,3 +89,4 @@ map:=MappingByFunction(Em,G,g);
 SaveWorkspace("End125_5start");
 LogTo();
 Read("End125_5all.g");
+Info(InfoLocalNRconst, 1, "**************** End125_5base.g left");

@@ -1,3 +1,5 @@
+Info(InfoLocalNRconst, 1, "**************** End125_b4new.g entered");
+
 Print("\n","l=",l," ");
 Print("","Binomial(t,l)=",Binomial(t,l),"\n");
 r:=Minimum(List(Co,Size));
@@ -29,3 +31,5 @@ t8:=Size(VV[8]);
 for j in [r..l] do
   Read("End125_comb_new.g");
 od;
+
+Info(InfoLocalNRconst, 1, "**************** End125_b4new.g left");

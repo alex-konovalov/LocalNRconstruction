@@ -1,3 +1,5 @@
+Info(InfoLocalNRconst, 1, "**************** FormEndom.g entered");
+
 LogTo(fn4(i3,i4));
 P:=MT;;
 s:=Size(P);
@@ -13,4 +15,4 @@ Print("];");
 Print("\n ");
 LogTo();
 
-
+Info(InfoLocalNRconst, 1, "**************** FormEndom.g left");

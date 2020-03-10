@@ -1,3 +1,5 @@
+Info(InfoLocalNRconst, 1, "**************** End125_b6cor.g entered");
+
 for v in [1..m1] do # where m1=Size(V5)
 
   V0:=[];
@@ -50,3 +52,6 @@ for v in [1..m1] do # where m1=Size(V5)
   Print("\n","The CASE v=", v," ","is completed","\n");
   #SaveWorkspace("End125_5mult_i2_v");
 od;
+
+Info(InfoLocalNRconst, 1, "**************** End125_b6cor.g left");
+

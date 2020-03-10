@@ -1,3 +1,5 @@
+Info(InfoLocalNRconst, 1, "**************** End125_b7cor.g entered");
+
 for w in [1..m3] do
 
   Print("\n","The CASE w=", w," started \n");
@@ -47,3 +49,5 @@ for w in [1..m3] do
   fi;
   Print("\n","The CASE w=", w," is completed\n");
 od;
+
+Info(InfoLocalNRconst, 1, "**************** End125_b7cor.g left");

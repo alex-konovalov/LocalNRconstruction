@@ -1,4 +1,5 @@
-# LoadPackage("localnr");
+Read("init.g");
+Info(InfoLocalNRconst, 1, "**************** End125_5all.g entered");
 
 # Functions to generate names of output files
 
@@ -62,4 +63,6 @@ for i1 in [1.. k1] do
   LogTo();
   Read("FormEndom.g");
 od;
+
+Info(InfoLocalNRconst, 1, "**************** End125_5all.g left");
 

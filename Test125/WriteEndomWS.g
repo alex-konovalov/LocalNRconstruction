@@ -1,3 +1,5 @@
+Info(InfoLocalNRconst, 1, "**************** WriteEndomWS.g entered");
+
 s:=Size(MT1);
 Li:=AsSortedList(G);
 n:=Size(G);
@@ -30,4 +32,4 @@ Print("\n","Size(P)=",Size(P),"\n");fi;
 od;
 Add(MT2,P);
 
-
+Info(InfoLocalNRconst, 1, "**************** WriteEndomWS.g left");

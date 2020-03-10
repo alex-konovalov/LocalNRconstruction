@@ -1,3 +1,5 @@
+Info(InfoLocalNRconst, 1, "**************** End125_comb_new.g entered");
+
 Print("\n","Comb ",j,"\n");
 Y[j]:=[];
 Ncom:=[];
@@ -67,3 +69,5 @@ for i in [1..li[j]] do
 od;
 
 Print("\n","List(Y,Size)=",List(Y,Size),"\n");
+
+Info(InfoLocalNRconst, 1, "**************** End125_comb_new.g left");

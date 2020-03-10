@@ -1,3 +1,5 @@
+Info(InfoLocalNRconst, 1, "**************** End125_a3mod.g entered");
+
 A:=U1[i2]; #current group
 NN:=ShallowCopy(N);;
 W1:=[]; # list of 'good' endomorphisms from the list N
@@ -81,3 +83,5 @@ for x in W2 do
   Add(N1,Union(x,x)); # is Union(x,x) same as Set(x) ???
 od;
 Read("End125_b5mod4.g");
+
+Info(InfoLocalNRconst, 1, "**************** End125_a3mod.g left");
