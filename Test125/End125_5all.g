@@ -22,6 +22,11 @@ local func;
 func := Concatenation("Endom125_5mult_",String(x),"_",String(y),"_v");
 return func;end;
 
+fn4:=function(i3,i4)
+local name;
+name := Concatenation("Endom125_5-",String(i3),"_",String(i4),".txt");
+return name;end;
+
 # MT (list of multiplication tables) - main outcome of our calculation
 MT:=[];
 
@@ -49,11 +54,6 @@ for i1 in [1.. k1] do
   MT:=Concatenation(MT2);;
   Print("\n","Size(MT)=",Size(MT),"\n");
   SaveWorkspace(fn1(i1));
-
-  fn4:=function(i3,i4)
-  local name;
-  name := Concatenation("Endom125_5-",String(i3),"_",String(i4),".txt");
-  return name;end;
 
   Print("\n","The CASE i1=", i1," is completed\n");
   Print("\n","IdGroup(A)=",IdGroup(A),"\n");
