@@ -1,3 +1,4 @@
+Read("init.g");
 LogTo("End125_5start.txt");
 
 G:=SmallGroup(125,5);
@@ -62,7 +63,6 @@ L1:=Difference(L,[One(L)]);;
 a:=Or[1];;
 g:=const(a);
 gen:=MinimalGeneratingSet(G);
-LoadPackage("sonata");
 En:=Homomorphisms(G,L);;
 ne:=Size(En);
 Print("Size(En)=",ne,"\n");

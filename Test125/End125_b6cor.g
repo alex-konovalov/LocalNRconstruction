@@ -29,8 +29,7 @@ for v in [1..m1] do # where m1=Size(V5)
 	  m2:=S00[1];
 	  r1:=25-m2;
 	  Print(" ","r1=",r1,"\n");
-      Read("Comb125.g"); # TODO: move elsewhere
-      res := Comb125(r1); # TODO: harmonise later
+      res := Comb125(r1); # TODO: harmonise handling output later
       Com := res[1];
       li := res[2];
 	  V7:=[];
