@@ -1,5 +1,7 @@
 for w in [1..m3] do
 
+  Print("\n","The CASE w=", w," started \n");
+
   V00:=[];
   for x in V0 do
     if IsSubset(V7[w],x)=false then 
@@ -43,5 +45,5 @@ for w in [1..m3] do
       Print("\n","In the Case w=",w," ","no local nearring exists!","\n");
     fi;
   fi;
-  Print("\n","The CASE w=", w," ","is completed","\n");
+  Print("\n","The CASE w=", w," is completed\n");
 od;
