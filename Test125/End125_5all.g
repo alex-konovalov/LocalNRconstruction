@@ -30,18 +30,19 @@ MT:=[];
 
 for i1 in [1.. k1] do
   LogTo(fn(i1));
-  Print("\n","The CASE i1=", i1," ","started","\n");
+  Print("\n","The CASE i1=", i1," started\n");
   MT2:=[];
   # U1 is a list of subgroups of Aut(G) with the current IdGroup
   U1:=Filtered(U,x->IdGroup(x)=Mult[i1]);;
   u:=Size(U1);
-  Print("\n","Size(U1)=",u ," ", "IdGroup=", Mult[i1], "\n ");
+  Print("\n","Size(U1)=",u ," IdGroup=", Mult[i1], "\n ");
   for i2 in [1..u] do
+    Print("The CASE i2=", i2," started\n");
     MT1:=[];
     Read("End125_a3mod.g");
     Read("WriteEndomWS.txt");
-    Print("The CASE i2=", i2," ","is completed","\n");
-    Print("\n","Size(MT1)=",Size(MT1)," ","Size(MT2)=",Size(MT2),"\n");
+    Print("The CASE i2=", i2," is completed\n");
+    Print("\n","Size(MT1)=",Size(MT1)," Size(MT2)=",Size(MT2),"\n");
     #SaveWorkspace(fn2(i1,i2));
   od;
   Print("\n","List(MT2,Size)=",List(MT2,Size),"\n");
@@ -54,7 +55,7 @@ for i1 in [1.. k1] do
   name := Concatenation("Endom125_5-",String(i3),"_",String(i4),".txt");
   return name;end;
 
-  Print("\n","The CASE i1=", i1," ","is completed","\n");
+  Print("\n","The CASE i1=", i1," is completed\n");
   Print("\n","IdGroup(A)=",IdGroup(A),"\n");
   i3:=IdGroup(A)[1];
   i4:=IdGroup(A)[2];
