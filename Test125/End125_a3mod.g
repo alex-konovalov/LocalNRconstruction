@@ -1,7 +1,7 @@
 Info(InfoLocalNRconst, 1, "**************** End125_a3mod.g entered");
 
 A:=U1[i2]; #current group
-NN:=ShallowCopy(N);;
+NN:=Set(N);;
 W1:=[]; # list of 'good' endomorphisms from the list N
 
 repeat
@@ -10,7 +10,7 @@ repeat
   if Size(c)<=25 then
     Add(W1,c);
   fi;
-  NN:=Difference(NN,d);
+  SubtractSet(NN,c);
 until Size(NN)=0;
 
 V2:=AsSet(W1);;
