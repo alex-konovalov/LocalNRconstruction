@@ -41,7 +41,7 @@ for i in [1..li[j]] do
   
   for k in [1..8] do
     d:=Combinations(VV[k],Com[j][i][k]);
-    Add(dd,d);
+    Add(dd,List(d,Union));
   od;
 
   Print("\n","List(dd,Size)=",List(dd,Size),"\n");
@@ -55,7 +55,7 @@ for i in [1..li[j]] do
   for x7 in dd[7] do
   for x8 in dd[8] do
 
-    cc:=Union(Union(x1),Union(x2),Union(x3),Union(x4),Union(x5),Union(x6),Union(x7),Union(x8));
+    cc:=Union(x1,x2,x3,x4,x5,x6,x7,x8);
     if Size(cc)=r1 then 
       if Size(ImagesSet(map,Union(V7[w],cc)))=25 then 
         if Size(SubsemigroupNC(Em,Union(V7[w],cc)))=25 then 
