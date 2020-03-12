@@ -28,12 +28,12 @@ Read("End625_a3mod.g");
 Read("WriteEndomWS.txt");
 Print("The CASE i2=", i2," ","is completed","\n");
 Print("\n","Size(MT1)=",Size(MT1)," ","Size(MT2)=",Size(MT2),"\n");
-SaveWorkspace(fn2(i1,i2));
+#SaveWorkspace(fn2(i1,i2));
 od;
 Print("\n","List(MT2,Size)=",List(MT2,Size),"\n");
 MT:=Concatenation(MT2);;
 Print("\n","Size(MT)=",Size(MT),"\n");
-SaveWorkspace(fn1(i1));
+#SaveWorkspace(fn1(i1));
 fn4:=function(i3,i4)
 local name;
 name := Concatenation("Endom625_11-",String(i3),"_",String(i4),".txt");
