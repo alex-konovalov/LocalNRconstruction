@@ -25,7 +25,7 @@ Print("\n","Size(U1)=",u ," ", "IdGroup=", Mult[i1], "\n ");
 for i2 in [1..u] do
 MT1:=[];
 Read("End625_a3mod.g");
-Read("WriteEndomWS.txt");
+Read("WriteEndomWS.g");
 Print("The CASE i2=", i2," ","is completed","\n");
 Print("\n","Size(MT1)=",Size(MT1)," ","Size(MT2)=",Size(MT2),"\n");
 #SaveWorkspace(fn2(i1,i2));
@@ -42,5 +42,5 @@ Print("\n","The CASE i1=", i1," ","is completed","\n");
 i3:=IdGroup(A)[1];
 i4:=IdGroup(A)[2];
 LogTo();
-Read("FormEndom.txt");
+Read("FormEndom.g");
 od;
