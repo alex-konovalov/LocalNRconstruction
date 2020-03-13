@@ -23,8 +23,13 @@ for x4 in dd[4] do
 for x5 in dd[5] do
 for x6 in dd[6] do
 cc:=Union(x1,x2,x3,x4,x5,x6);
-if Size(cc)=r1 then if Size(ImagesSet(map,Union(V7[w],cc)))=125 then 
-if Size(SubsemigroupNC(Em,Union(V7[w],cc)))=125 then 
-Add(Y[j],Union(V7[w],cc));fi;fi;fi;
+if Size(cc)=r1 then
+  V7wcc := Union(V7[w],cc);
+  if Size(ImagesSet(map,V7wcc))=125 then
+    if Size(SubsemigroupNC(Em,V7wcc))=125 then
+      Add(Y[j],V7wcc);
+    fi;
+  fi;
+fi;
 od;od;od;od;od;od;od;
 Print("\n","List(Y,Size)=",List(Y,Size),"\n");
