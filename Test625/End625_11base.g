@@ -1,4 +1,5 @@
 LogTo("End625_11start.txt");
+Read("Test625config.g");
 G:=SmallGroup(625,11);
 Aut:=AutomorphismGroup(G);
 is:=IsomorphismPermGroup(Aut);

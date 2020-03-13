@@ -15,7 +15,7 @@ local func;
 func := Concatenation("Endom625_11mult_",String(x),"_",String(y),"_v");
 return func;end;
 MT:=[];
-for i1 in [2.. 2] do
+for i1 in LOCALNR_MultPositions do
 LogTo(fn(i1));
 Print("\n","The CASE i1=", i1," ","started","\n");
 MT2:=[];
